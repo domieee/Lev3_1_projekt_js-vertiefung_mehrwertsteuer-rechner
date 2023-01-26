@@ -14,6 +14,8 @@ function calcAmounts() {
         percentage = 19;
     } else if (seven.checked) {
         percentage = 7;
+    } else {
+        alert('Please select a percentage')
     }
 
     vatAmount.innerHTML = ((netAmount.value * percentage) / 100).toFixed(2);
@@ -22,6 +24,8 @@ function calcAmounts() {
         grossAmount.innerHTML = (parseFloat(vatAmount.innerHTML) + parseFloat(netAmount.value)).toFixed(2);
     } else if (peel.checked) {
         grossAmount.innerHTML = (parseFloat(netAmount.value) - parseFloat(vatAmount.innerHTML)).toFixed(2);
+    } else {
+        alert('Whip or peel?')
     }
 }
 
