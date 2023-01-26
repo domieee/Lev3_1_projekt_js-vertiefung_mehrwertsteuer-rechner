@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lev3_1_projekt_js-vertiefung_mehrwertsteuer-rechner </title>
+</head>
+<body>
+    <section class="section-wrap">
+        <form action="#"></form> 
+            <article class="whip-peel">
+                <p>Was soll berechnet werden?</p>
+                <input type="radio" name="whip-peel" id="whip" value="whip">
+                <label for="whip">Mehrwertsteuer aufschlagen (Netto zu Brutto)</label>
+                <input type="radio" name="whip-peel" id="peel" value="peel">
+                <label for="peel">Mehrwertsteuer abziehen (Brutto zu Brutto)</label>
+            </article>
+            <article class="percentage">
+                <p>Mehrwertsteuersatz</p>
+                <input type="radio" name="percentage" id="nineteen" value="19">
+                <label for="nineteen">19 %</label>
+                <input type="radio" name="percentage" id="seven" value="7">
+                <label for="seven">7 %</label>
+            </article>
+            <article class="netAmount">
+                <p>Nettobetrag (Preis ohne Mehrwertsteuer) in Euro*</p>
+                <input type="text" name="netAmount" id="netAmount">
+            </article>
+            <button type="submit" id="submit">Berechnen</button>
+        </form>
+    </section>
+    <section class="results">
+        <p>Ergebnis</p>
+        <p class="result" id="vatAmount">Mehrwertsteuerbetrag</p>
+        <p class="result"></p>
+        <p>Bruttobetrag</p>
+        <p class="result" id="grossAmount"></p>
+    </section>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
